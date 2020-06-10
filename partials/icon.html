@@ -1,0 +1,16 @@
+{{/*
+  icon
+
+  @author @regisphilibert
+
+  @context String (.)
+
+  @access public
+
+  @example - Go Template
+    {{ partial "tnd-icons/icon" "youtube" }}
+    {{ partial "tnd-icons/icon" "brands/youtube" }}
+*/}}
+{{- with partialCached "tnd-icons/private/GetIcon" . -}}
+  {{- .Content | safeHTML -}}
+{{- end -}}

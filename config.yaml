@@ -1,0 +1,6 @@
+module:
+  mounts:
+    - source: partials
+      target: layouts/partials/tnd-icons
+    - source: svgs
+      target: assets/tnd-icons/svgs
