@@ -1,0 +1,27 @@
+{{/*
+  GetIcon
+
+  @author @regisphilibert
+
+  @context String (.)
+
+  @access private
+
+  @return Resource
+
+  @example - Go Template
+  {{ with partialCached "tnd-icons/private/GetIcon" . }}
+    <div style="fill:black;width:1rem;">
+      {{ .Content | safeHTML }}
+    </div>
+  {{ end }}
+*/}}
+
+{{ $dir := "tnd-icons/" }}
+{{ $return := "" }}
+
+{{ with resources.Get (print $dir . ".svg") }}
+  {{ $return = .Content }}
+{{ end }}
+
+{{ return $return }}

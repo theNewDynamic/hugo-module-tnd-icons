@@ -3,4 +3,4 @@ module:
     - source: partials
       target: layouts/partials/tnd-icons
     - source: svgs
-      target: assets/tnd-icons/svgs
+      target: assets/tnd-icons

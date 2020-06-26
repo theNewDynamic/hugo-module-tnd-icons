@@ -1,0 +1,21 @@
+{{/*
+  FormatIcon
+  Will rewrite icon content if needed (not yet)
+
+  @author @regisphilibert
+
+  @context Asset (.)
+
+  @access public
+
+  @example - Go Template
+  {{ $partial "tnd-icons/private/func/FormatIcon" (dict "asset" . "icon" "github") }}
+*/}}
+
+{{ $content := "" }}
+{{ with .asset.Content }}
+  {{ $content =  . }}
+{{ end }}
+
+{{ return $content }}
+
