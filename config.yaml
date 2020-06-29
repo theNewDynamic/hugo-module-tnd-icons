@@ -1,6 +1,15 @@
 module:
   mounts:
+    - source: sprite/index.svg
+      target: layouts/index.tnd_icons_sprite.svg
     - source: partials
       target: layouts/partials/tnd-icons
     - source: svgs
       target: assets/tnd-icons
+
+
+outputFormats:
+  tnd_icons_sprite:
+    baseName: tnd_icons_sprite
+    isPlainText: true
+    mediaType: image/svg+xml
